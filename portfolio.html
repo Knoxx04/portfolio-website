@@ -7,27 +7,89 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <nav>
-        <a href="portfolio.html">Home</a>
-        <a href="#about">About me</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <div class="logo">MyBrand</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
     </nav>
 
+    <script src="portfolio.js"></script>
+
     <section id="about">
-        <h1>About Me</h1>
-        <p>Hello!...my name is Lennox Onyango.<br> I am a fullstack developer and a data science enthusiast.<br> I am of kenyan origin. Fun fact.. yes we do have access to clean water.<br> I am passonate about basketball. I love playing and also actively coach students interested in the game.<br> Music lover too.</p>
+            <h1>About Me</h1>
+                <p>Hello!...my name is Lennox Onyango.<br> I am a fullstack developer and a data science enthusiast.<br>
+             I am of kenyan origin. Fun fact.. yes we do have access to clean water.<br>
+             I am passonate about basketball. I love playing and also actively coach students interested in the game.<br>
+             Music lover too.
+                </p>
     </section>
     <section id="services">
         <h1>Services</h1>
+        <ul>
+            <li><i class="fas fa-paint-brush"></i> Web Design</li>
+            <li><i class="fas fa-code"></i> Front-end Development</li>
+            <li><i class="fas fa-server"></i> Back-end Development</li>
+            <li><i class="fas fa-plug"></i> API Integration</li>
+        </ul>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+
     </section>
     <section id="projects">
         <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project">
+                <a href="https://steve-bakery.vercel.app/" target="_blank">
+                    <img src="img/089f7d98-8832-460c-9529-049626e1bbb8.png" alt="Project 1">
+                    <h3>Patisserie project</h3>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://your-project-link.com" target="_blank">
+                    <img src="img/f2cbbd16-6562-43e0-89c3-8fa25dc14fe3 (1).png" alt="Project 2">
+                    <h3>Milk management system</h3>
+                </a>
+            </div>
+            <div class="project">
+                <a href="https://your-project-link.com" target="_blank">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </a>
+            </div>
+        </div>
     </section>
     <section id="contact">
         <h1>Contact</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    
+        <div class="social-media">
+            <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </section>
+    
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    
     
 </body>
 </html>
